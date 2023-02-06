@@ -1,0 +1,13 @@
+@use '../../../assets/scss/abstracts' as ab;
+
+.products {
+  .products__title {
+    padding: 1.2rem 0;
+  }
+
+  .products__content {
+    padding: 2.4rem;
+    background-color: ab.$color-gray-very-light;
+    border-radius: 16px;
+  }
+}
