@@ -1,0 +1,57 @@
+@use '../../../assets/scss/abstracts' as ab;
+
+.product {
+  display: grid;
+  grid-template-columns: 124px 1fr 124px;
+  column-gap: 1.6rem;
+
+  padding: 1.8rem 0;
+
+  & + .product {
+    border-top: 1px solid ab.$color-gray-light;
+  }
+
+  .product__img {
+    height: 124px;
+    margin: auto;
+  }
+
+  .product__form {
+    @include ab.flex(column, center, flex-end, 0.8rem);
+  }
+
+  .product__text,
+  .product__form {
+    align-self: center;
+  }
+
+  .product__name {
+    font-size: 2.4rem;
+    color: ab.$color-gray-dark;
+
+    padding: 0.8rem 0;
+  }
+
+  .product__input {
+    text-align: right;
+    padding: 0.24rem 0 0.24rem 0.8rem;
+  }
+
+  .product__btn {
+    padding: 0.24rem 1.2rem;
+
+    background-color: transparent;
+    color: ab.$color-bg-blue;
+
+    border: 1px solid ab.$color-bg-blue;
+    border-radius: 999px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: ab.$color-bg-blue;
+      color: ab.$color-gray-very-light;
+    }
+  }
+}
