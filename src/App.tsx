@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { Header } from 'components';
+
 function App() {
-  return <h1>Apple Store Online</h1>;
+  return <Header />;
 }
 
 export default App;
