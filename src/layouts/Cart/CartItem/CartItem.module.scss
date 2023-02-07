@@ -1,0 +1,47 @@
+@use '../../../assets/scss/abstracts' as ab;
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  color: ab.$color-gray-dark;
+
+  .cart__amount {
+    width: 72px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+
+    text-align: center;
+    border: 1px solid ab.$color-gray-light;
+    border-radius: 4px;
+  }
+
+  .cart__price {
+    justify-self: right;
+  }
+
+  .cart__btn {
+    background-color: transparent;
+    border: none;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+      color: ab.$color-bg-blue;
+    }
+  }
+
+  .cart__number {
+    color: ab.$color-gray;
+
+    border-left: 1px solid ab.$color-gray-light;
+    border-right: 1px solid ab.$color-gray-light;
+  }
+}
