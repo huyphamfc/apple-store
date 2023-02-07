@@ -1,0 +1,17 @@
+@use '../../assets/scss/abstracts' as ab;
+
+.shopping {
+  @extend %wrapper;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.4rem;
+
+  background-color: ab.$color-bg;
+}
+
+@media (max-width: 56em) {
+  .shopping {
+    grid-template-columns: 1fr;
+  }
+}
